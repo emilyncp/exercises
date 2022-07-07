@@ -3,7 +3,7 @@ def gold_room
   print ">>> "
   choice = $stdin.gets.chomp
 
-  if choice=~/0/ || choice.include?("1")
+  if choice=~/0/ || choice=~/1/
     how_much = choice.to_i
   else
     dead("learn to type a number.")
